@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/react_deploy_htn_mortality/static/css/main.4c274050.css",
+    "main.js": "/react_deploy_htn_mortality/static/js/main.8da3311f.js",
+    "static/media/plotcom.csv": "/react_deploy_htn_mortality/static/media/plotcom.ff7792ae819c545ebc14.csv",
+    "index.html": "/react_deploy_htn_mortality/index.html",
+    "main.4c274050.css.map": "/react_deploy_htn_mortality/static/css/main.4c274050.css.map",
+    "main.8da3311f.js.map": "/react_deploy_htn_mortality/static/js/main.8da3311f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4c274050.css",
+    "static/js/main.8da3311f.js"
+  ]
+}
