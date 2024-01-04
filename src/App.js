@@ -54,9 +54,9 @@ function App() {
   
   return (
     <div className="App">
-      <Display setYmax={setYmax} setOc={setOc}/>
+      <Display setYmax={setYmax} setOc={setOc} ltext={ltext} setLtext={setLtext}/>
       <Tabs  setPgr={setPgr} setLeg={setLeg}/>
-      <Downbtn ltext={ltext} setLtext={setLtext}/>
+      <Downbtn />
       <Svgx/>
       
 

@@ -1,6 +1,6 @@
 import { useState} from 'react';
 
-const Display = ({setYmax,oc,setOc}) => {
+const Display = ({setYmax,oc,setOc,ltext,setLtext}) => {
     const [sinput, setSinpt]=useState()
     const [ocactive, setOcactive] = useState(1);
 
@@ -48,6 +48,10 @@ const Display = ({setYmax,oc,setOc}) => {
 
       };
 
+      const handleSelectChange = (event) => {
+        setLtext(event.target.value);
+      };
+
     return (
     <div className='cs'>
         <div id="divselect">
@@ -62,16 +66,25 @@ const Display = ({setYmax,oc,setOc}) => {
               </button>
               )
             })}
+            </div>
 
-            <div className="range">
+        <div id="level" >
+              <label><b>Show Values</b></label>
+              <select className='level' name="texts" value={ltext} onChange={handleSelectChange}>
+                <option value="Yes">Yes</option>
+                <option value="No" >No</option>
+              </select>
+          </div>
+
+        <div className="range">
                <p >Please Input Scale:</p>
                 <input className="rmax"
                 onChange={inputchange}
                 />
                 <button className='changesb'type="submit" onClick={inputsubmit}>Submit</button>
-             </div>
-       
         </div>
+       
+        
  
     </div>
   )

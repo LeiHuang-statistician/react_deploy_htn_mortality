@@ -1,19 +1,11 @@
 import React from 'react'
 
-const Downbtn = ({ltext,setLtext}) => {
+const Downbtn = () => {
 
-  const handleSelectChange = (event) => {
-    setLtext(event.target.value);
-  };
+ 
   return (
     <>
-    <div id="level" >
-      <label><b>Show Values</b></label>
-      <select className='level' name="texts" value={ltext} onChange={handleSelectChange}>
-        <option value="Yes">Yes</option>
-        <option value="No" >No</option>
-      </select>
-   </div>
+
     <div id="dtndiv">
         <p>
         <a href=" " id="link" download="image.png">
