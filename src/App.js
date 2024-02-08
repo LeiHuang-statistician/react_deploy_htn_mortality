@@ -34,9 +34,9 @@ function App() {
           x.map(d=>d.time=+d.time)
           x.map(d=>d.dying=+d.dying)
           x=x.filter(d=>d.group!=='' && d.oc===oc && d.pgr===pgr)
-          console.log(oc, pgr)
+          //console.log(oc, pgr)
          
-          console.log("x",x)
+          //console.log("x",x)
           var title;
           if (oc==="AISH_cpt") {title="Accident, injury, suicide, or homicide";}
            else {title=x[0].title}
