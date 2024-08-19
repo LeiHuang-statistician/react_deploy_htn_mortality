@@ -203,6 +203,25 @@ if (ltext==="Yes") {
     .style('font-weight', 300)
     .style("font-size", 14)
     .style("font-family", "Helvetica")
+
+
+    
+  d3.select(".svg1")
+  .selectAll(".flag15")
+  .append("g")
+  .attr("class", "flag15")
+  .data(data)
+  .enter()
+  .append("text")
+  .attr("x", d => xScale(d.time))
+  .attr("y", d => yScale(d.dying))
+  .attr("dy", 8)
+  .attr("text-anchor", "middle")
+  .text(d=>d.flag15==="1"? d.dying.toFixed(2):"")
+  .style("fill", "black")
+  .style('font-weight', 300)
+  .style("font-size", 14)
+  .style("font-family", "Helvetica")
 }
 
 //************************************append title
