@@ -24,7 +24,7 @@ const Display = ({setYmax,oc,setOc,ltext,setLtext}) => {
         { id: 5, label: 'Chronic lung disease'},
         { id: 6, label: 'Dementia'},
         { id: 7, label: 'Accident, injury, suicide, or homicide'},
-        { id: 8, label: 'End-stage renal disease'},
+        { id: 8, label: 'End-stage kidney disease'},
         { id: 9, label: 'Liver disease'},
         { id: 10, label: 'Other non-cardiac or non-stroke death'},
         { id: 11, label: 'Unclassifiable death'},
